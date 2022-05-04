@@ -87,7 +87,7 @@ HashOneFile(char *FilenameA)
         meow_u128 HashA = MeowHash(MeowDefaultSeed, A.Size, A.Contents);
         
         // NOTE(casey): Print the hash
-        printf("  Hash of \"%s\":\n", FilenameA);
+        printf("  Hash of \"%s\" (%zu):\n", FilenameA, A.Size);
         PrintHash(HashA);
     }
     
